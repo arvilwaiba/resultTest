@@ -19,6 +19,7 @@
             android:background="@drawable/card_view_design">
 
             <TextView
+                android:id="@+id/subjectID"
                 android:layout_width="0dp"
                 android:text="Subjects"
                 android:padding="2dp"
@@ -29,6 +30,7 @@
                 android:layout_height="wrap_content" />
 
             <TextView
+                android:id="@+id/fmID"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:textSize="16dp"
@@ -39,6 +41,7 @@
                 android:text="FM" />
 
             <TextView
+                android:id="@+id/pmID"
                 android:gravity="center"
                 android:layout_width="0dp"
                 android:text="PM"
@@ -49,6 +52,7 @@
                 android:layout_height="wrap_content" />
 
             <TextView
+                android:id="@+id/omID"
                 android:layout_width="0dp"
                 android:text="OM"
                 android:gravity="center"
@@ -58,6 +62,7 @@
                 android:background="@drawable/textview_design"
                 android:layout_height="wrap_content" />
             <TextView
+                android:id="@+id/remarkID"
                 android:layout_width="0dp"
                 android:text="Remarks"
                 android:layout_weight="0.2"

@@ -18,6 +18,13 @@ public class Subject {
     @SerializedName("name")
     @Expose
     private String name;
+    @SerializedName("fullMarks")
+    @Expose
+    private Integer fullMarks;
+    @SerializedName("passMarks")
+    @Expose
+    private Integer passMarks;
+
 
     public String getAlias() {
         return alias;
@@ -51,4 +58,19 @@ public class Subject {
         this.name = name;
     }
 
+    public Integer getFullMarks() {
+        return fullMarks;
+    }
+
+    public void setFullMarks(Integer fullMarks) {
+        this.fullMarks = fullMarks;
+    }
+
+    public Integer getPassMarks() {
+        return passMarks;
+    }
+
+    public void setPassMarks(Integer passMarks) {
+        this.passMarks = passMarks;
+    }
 }

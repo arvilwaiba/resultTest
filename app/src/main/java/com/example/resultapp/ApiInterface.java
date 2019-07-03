@@ -18,5 +18,5 @@ import retrofit2.http.Query;
 
 public interface ApiInterface {
     @GET("data")
-    Call<List<ResultDTO>> getResult();
+    Call<ResultDTO> getResult();
 }

@@ -6,15 +6,18 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.util.List;
 
 public class ResultAdapter extends RecyclerView.Adapter<ResultAdapter.ViewHolder> {
 
-    List<ResultDTO> resultDTOList;
+    List<Datum> resultDTOList;
     Context mContext;
 
-    public ResultAdapter(List<ResultDTO> resultDTOList, Context mContext) {
+    public ResultAdapter(List<Datum> resultDTOList, Context mContext) {
         this.resultDTOList = resultDTOList;
         this.mContext = mContext;
     }
@@ -29,8 +32,7 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
-
-
+        viewHolder.displayResult(resultDTOList.get(i));
     }
 
     @Override
@@ -40,8 +42,33 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultAdapter.ViewHolder
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
+        TextView subjectTextView, fmTextView, pmTextView, omTextView, remarksTextView;
+        String subject, remarks;
+        Integer fm, pm, om;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            subjectTextView = itemView.findViewById(R.id.subjectID);
+            fmTextView = itemView.findViewById(R.id.fmID);
+            pmTextView = itemView.findViewById(R.id.pmID);
+            omTextView = itemView.findViewById(R.id.omID);
+            remarksTextView = itemView.findViewById(R.id.remarkID);
+        }
+
+        public void displayResult(Datum datum) {
+
+            subject = datum.getSubject().getSubjectName();
+            remarks = datum.getMarks().getRemarks();
+            fm = datum.getSubject().getFullMarks();
+            pm = datum.getSubject().getPassMarks();
+            om = datum.getMarks().getObtainedMarks();
+
+            subjectTextView.setText(subject);
+            fmTextView.setText(fm);
+            pmTextView.setText(pm);
+            omTextView.setText(om);
+            remarksTextView.setText(remarks);
+
         }
     }
 
