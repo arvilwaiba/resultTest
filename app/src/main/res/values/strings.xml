@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ResultApp</string>
+    
+    <string-array name="semester">
+        <item>Choose Semester</item>
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+        <item>Forth</item>
+    </string-array>
+
+
+    <string-array name="ExamType">
+        <item>Choose Exam Type</item>
+        <item>Unit Test</item>
+        <item>Mid Term</item>
+        <item>Pre Board</item>
+    </string-array>
+
+</resources>

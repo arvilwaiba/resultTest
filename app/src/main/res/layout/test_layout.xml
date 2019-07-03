@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <android.support.v7.widget.CardView
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_view_design">
+
+            <TextView
+                android:layout_width="0dp"
+                android:text="Subjects"
+                android:padding="2dp"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_weight="0.2"
+                android:background="@drawable/textview_design"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/textview_design"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="FM" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:text="PM"
+                android:layout_weight="0.2"
+                android:textSize="16dp"
+                android:padding="2dp"
+                android:background="@drawable/textview_design"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:text="OM"
+                android:gravity="center"
+                android:layout_weight="0.2"
+                android:padding="2dp"
+                android:textSize="16dp"
+                android:background="@drawable/textview_design"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:text="Remarks"
+                android:layout_weight="0.2"
+                android:padding="2dp"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:background="@drawable/textview_design"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
